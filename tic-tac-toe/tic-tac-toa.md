@@ -1,6 +1,6 @@
 The rule of tic-tac-toe can be found in  
 https://en.wikipedia.org/wiki/Tic-tac-toe  
-input the state of the game, and try to find the optimal play
+input the state of the board, and try to find the optimal play
 
 e.g.  
 input:  
