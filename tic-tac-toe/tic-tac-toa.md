@@ -18,3 +18,8 @@ the function should return:
   ..o
 
 implement function f
+
+a detailed solution can be found in:
+https://www.geeksforgeeks.org/implementation-of-tic-tac-toe-game/
+
+Here I give a short Python solution.
