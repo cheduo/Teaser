@@ -2,17 +2,16 @@ import copy
 def win(board,player):
     if max(min(player==i for i in row) for row in board):
         return True
-    elif max(min(player==i for i in row) for row in zip(*board)):
+    if max(min(player==i for i in row) for row in zip(*board)):
         return True
-    elif min(player==board[i][i] for i in range(len(board))) or min(player==board[i][-i-1] for i in range(len(board))):
+    if min(player==board[i][i] for i in range(len(board))) or min(player==board[i][-i-1] for i in range(len(board))):
         return True
-    else: return False
 
 def end(board):
     return not max('.'==i for row in board for i in row)
 
 def score(board,player):
-    ret = (-2, board[:])
+    ret = (-2, board)
     for row in board:
         for i, v in enumerate(row):
             if v=='.':
