@@ -1,2 +1,2 @@
-# iq
+# IQ
 some brainteasers
